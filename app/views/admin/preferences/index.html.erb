@@ -1,0 +1,7 @@
+<h1>List of Preferences</h1>
+<ul>
+<% @preferences.each do |pre| %>
+<li><=% link_to pre.id, admin_preference_path(pre) %></li>
+
+<% end %>
+</ul>
